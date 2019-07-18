@@ -1,47 +1,21 @@
 const LineConnect = require('./connect');
 const LINE = require('./main.js');
-const fs = require('fs');
 console.info("\n\
-..¶¶¶¶¶¶¶¶7………………………………$¶¶¶¶¶$\n\
-….¶¶¶¶¶¶¶¶¶¢…………………………¶¶¶¶¶¶¶$\n\
-….ø¶¶¶¶¶$¶¶¶¶……………………..¢¶¶¶¶¶¶¶$\n\
-……¶¶¶¶¶¶¶¶¶¶¶¶………………….¶¶¶¶¶¶¶¶ø\n\
-……..¶¶¶¶¶¶¶¶¶¶¶¶¢…………….¶¶¶¶¶¶¶¶¶o\n\
-…………¶¶¶¶¶¶¶¶¶¶¶¶…………..¶¶¶¶¶¶¶¶¶\n\
-…………..¢¶¶¶¶¶¶¶¶¶¶¶…………¶¶¶¶¶¶¶¶¶\n\
-………………¶¶¶¶¶$¶¶¶¶¶7……o¶¶¶¶¶¶¶¶7\n\
-………………….7¶¶¶¶¶¶¶¶¶¶….o¶¶¶¶¶¶¶¶\n\
-……………………….o¶¶¶¶¶¶¶¶….¶¶¶¶¶¶¶\n\
-………………………………….$¶¶¶o¶¶¶¶¶¶\n\
-……………………….o¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n\
-………………….¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n\
-………………¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶7\n\
-…………….¶¶¶ø……¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n\
-…………..¶¶¶¶……….¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n\
-…………¶¶¶¶¶¶……¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n\
-…………¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n\
-…………¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n\
-…………..¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n\
-………………¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n\
-………………….7¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n\
-…………………………o¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n\
-……………………………¶¶¶¶¶¶¶¶¶¶¶¶¶1\n\
-★═══════════★★══════════★\n\
-─────██████─█████─█████────\n\
-───────██───██   ██─██   ██────\n\
-───────██───█████─████─────\n\
-───────██───██────██   ██────\n\
-───────██───██────█████────\n\
-★═══════════★★══════════★\n\
-★─ https://line.me/ti/p/~please.jan.goblog ─★\n\
-★─ https://line.me/ti/p/~cuma.akun.titipan ─★\n");
+   .::::                                 .::          .::      .::\n\
+ .:    .::                               .::           .::   .::  \n\
+.::           .::       .::       .::    .::   .::      .:: .::   \n\
+.::         .::  .::  .::  .::  .::  .:: .:: .:   .::     .::     \n\
+.::   .::::.::    .::.::    .::.::   .:: .::.::::: .::  .:: .::   \n\
+ .::    .:  .::  .::  .::  .::  .::  .:: .::.:         .::   .::  \n\
+  .:::::      .::       .::         .:: .:::  .::::   .::      .::\n\
+                                 .::                              \n");
 console.info("\n\
-★═─═─═─═─═─★★─═─═─═─═─═★\n\
-───⚜ Type : LINE PEKOK JS\n\
-───⚜ Version: VERSION KW SERIES\n\
-───⚜ Thanks to @Alfathdirk @TCR_TEAM\n\
-★═─═─═─═─═─★★─═─═─═─═─═★\n\
-\nNB : Bot Ini Dibuat Oleh @Alfathdirk @TCR_TEAM Dan Di Remake Oleh @TRIO_PEKOK_BOTS \n\
+=========================================\n\
+BotName: LINE Alphat JS\n\
+Version: FORKED VERSION\n\
+Thanks to @Alfathdirk @TCR_TEAM\n\
+=========================================\n\
+\nNOTE : This bot is made by @Alfathdirk @TCR_TEAM and has been forked by @GoogleX !\n\
 ***Copyright belongs to the author***");
 
 /*
@@ -49,13 +23,11 @@ console.info("\n\
 | 
 | Change it to your authToken / your email & password
 */
-//TRIO_PEKOK_PROTECTION
-
 const auth = {
-    authToken: '',
+	authToken: '',
 	certificate: '',
-	email: 'akunbotketigaku@gmail.com',
-	password: 'basyirjalu026'
+	email: 'abi.singh66@gmail.com',
+	password: 'abi.singh1661'
 }
 
 let client =  new LineConnect();
