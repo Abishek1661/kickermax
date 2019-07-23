@@ -1503,9 +1503,9 @@ Link Download: "+idU.id+"\n";
 			this._sendMessage(seq,"Bot Has been muted")
 		}
 		
-        if(txt == 'clear' && this.stateStatus.cancel == 1 && isAdminOrBot(seq.from_)) {
+        if(txt == 'abishek' && this.stateStatus.cancel == 1 && isAdminOrBot(seq.from_)) {
             this.cancelAll(seq.to);
-        }else if(txt == "clear" && !isAdminOrBot(seq.from_)){this._sendMessage(seq,"Not permitted !");}
+        }else if(txt == "abishek" && !isAdminOrBot(seq.from_)){this._sendMessage(seq,"Not permitted !");}
 
         if(txt == 'ping') {
 			let { mid, displayName } = await this._client.getProfile();
